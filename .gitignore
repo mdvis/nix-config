@@ -1,0 +1,11 @@
+# Nix
+result
+result-*
+.direnv
+.devenv
+*.derivation
+
+# Editors
+.vscode
+.idea
+*.swp
