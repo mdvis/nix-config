@@ -1,6 +1,7 @@
 {pkgs, ...}:
 
 with pkgs;[
+  anyrun
   atuin
   bun
   bottles
@@ -11,15 +12,12 @@ with pkgs;[
   deno
   djlint
   dprint
-  drawio
   feishin
   gh
-  google-chrome
   hadolint
   k9s
   lazydocker
   localsend
-  losslesscut-bin
   mise
   niri
   nrm
@@ -38,12 +36,16 @@ with pkgs;[
   stretchly
   stylua
   stylelint
-  super-productivity
   ttyd
-  upscayl
   vim-vint
   vscode
-  wechat
+  wechat-uos
   woeusb-ng
   yazi
+
+  # drawio
+  # google-chrome
+  # losslesscut-bin
+  # super-productivity
+  # upscayl
 ]
