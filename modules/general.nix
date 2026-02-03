@@ -1,6 +1,7 @@
 {pkgs, ...}:
 
 with pkgs;[
+  anyrun
   atuin
   bun
   bottles
@@ -43,7 +44,7 @@ with pkgs;[
   upscayl
   vim-vint
   vscode
-  wechat
+  wechat-uos
   woeusb-ng
   yazi
 ]
