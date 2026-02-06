@@ -32,11 +32,19 @@
 
     copilot = import ./modules/copilot.nix { inherit pkgs; };
 
+    linux = import ./modules/linux.nix { inherit pkgs; };
+
     all-pkgs = general ++ copilot;
+    linux-pkgs = linux;
   in {
     packages.all-pkgs = pkgs.symlinkJoin {
       name = "all-pkgs";
       paths = all-pkgs;
+    };
+
+    packages.linux-pkgs = pkgs.symlinkJoin {
+      name = "linux-pkgs";
+      paths = linux-pkgs;
     };
   }) // {
     homeConfigurations = let
